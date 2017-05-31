@@ -1,0 +1,36 @@
+/* Карусель с популярными товарами */
+.main-carousel { position: relative; border-bottom: 1px solid #ccc; padding-bottom: 20px; margin-bottom: 60px; }
+.main-carousel .slides { margin: 0; padding: 0; list-style: none; }
+.main-carousel .slides li { float: left; width: 25%; }
+.carousel-item { position: relative; margin: 20px; border: 1px solid #ccc; box-shadow: 0 0 20px rgba(0,0,0,0.2); }
+.carousel-item .image { height: 310px; text-align: center; display: block; padding: 20px 0; }
+.carousel-item .image img { vertical-align: top; height: 100%; }
+.carousel-item .title { display: block; font-size: 22px; color: #666; padding: 3px 0 4px; text-decoration: none; text-align: center; }
+.carousel-item .stars { position: absolute; top: 20px; right: 10px; z-index: 100; }
+.carousel-item .fav { position: absolute; top: 15px; left: 10px; z-index: 100; }
+.carousel-item .intro { transition: opacity 0.2s ease-out; opacity: 0; position: absolute; top: 0; left: 0; right: 0; z-index: 50; padding: 60px 30px 0; min-height: 290px; font-size: 16px; line-height: 20px; color: #fff; font-weight: lighter; background: #3B4749; background: rgba(59, 71, 73, 0.87); }
+.carousel-item:hover .intro { opacity: 1; }
+.carousel-item .price { float: left; font-size: 16px; color: #FF0066; font-weight: 900; padding: 6px 10px; text-transform: uppercase; }
+.carousel-item .price small { font-size: 12px; color: #B3B3B3; font-weight: bold; vertical-align: top; padding: 3px 2px 0; display: inline-block; }
+.carousel-item .tooltip { transition: opacity 0.2s ease-out; opacity: 0; z-index: -1; box-shadow: 0 0 20px rgba(0,0,0,0.4); font-size: 12px; position: absolute; bottom: 58px; left: 0; right:0; border: 2px solid #FF0066; background: #fff; border-radius: 15px; padding: 35px 0; text-align: center; font-weight: lighter; }
+.carousel-item .tooltip:after { transform: rotate(45deg); position: absolute; border: 2px solid #FF0066; border-width: 0 2px 2px 0; content: ''; right: 36px; bottom: -16px; display: block; background: #fff; width: 26px; height: 26px; }
+.carousel-item .tooltip strong { font-size: 16px; display: block; padding-bottom: 10px; }
+.carousel-item .buy-btn:hover + .tooltip { opacity: 1; z-index: 250; }
+.main-carousel .flex-control-nav { margin: 0; padding: 25px 0 5px; list-style: none; text-align: center; }
+.main-carousel .flex-control-nav li { display: inline-block; padding: 3px; }
+.main-carousel .flex-control-nav li a { display: block; text-indent: -9999px; border: 1px solid #ccc; width: 6px; height: 6px; border-radius: 50%; }
+.main-carousel .flex-control-nav li a.flex-active { background: #ccc; }
+.main-carousel .flex-direction-nav { margin: 0; padding: 0; clear: both; list-style: none; }
+.main-carousel .flex-direction-nav a { position: absolute; top: 50%; margin-top: -15px; box-shadow: 0 2px 6px rgba(0,0,0,0.3); display: block; width: 28px; height: 28px; background: #fff; border: 1px solid #FF0066; border-radius: 50%; text-indent: -9999px; }
+.main-carousel .flex-direction-nav .flex-prev { left: 5px; }
+.main-carousel .flex-direction-nav .flex-next { right: 5px; }
+
+.display-cat-items .display-cat-item { width: 25%; float: left; }
+.cat-carousel { margin: 20px 0; }
+@media screen and (max-width: 1000px) {
+	.display-cat-items .display-cat-item { width: 33.33%; }
+}
+@media screen and (max-width: 600px) {
+	.display-cat-items .display-cat-item { width: auto; float: none; }
+	.carousel-item { margin: 10px 0; }
+}

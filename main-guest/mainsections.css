@@ -1,0 +1,15 @@
+/* Разделы каталога на главной */
+.main-cat-section { float: left; width: 20%; }
+.main-cat-section .item-contaner { position: relative; margin: 7px; }
+.main-cat-section .item-contaner img { width: 100%; vertical-align: top; }
+.main-cat-section .item-contaner .title { transition: opacity 0.2s ease-out; padding: 3px 0; display: block; background: rgba(255,204,0,0.7); position: absolute; left: 0; width: 100%; bottom: 0; text-align: center; font-weight: bold; color: #000; font-size: 20px; }
+.main-cat-section .item-contaner .descr { transition: opacity 0.2s ease-out; opacity: 0; padding: 12px; display: block; position: absolute; top: 15px; right: 15px; bottom: 15px; left: 15px; background: rgba(0,0,0,0.7); }
+.main-cat-section .item-contaner .valign { border: 1px solid #FFCC00; display: table; width: 100%; height: 100%; vertical-align: middle; text-decoration: none; }
+.main-cat-section .item-contaner .valign > span { position: relative; vertical-align: middle; text-align: center; display: table-cell; color: #fff; font-size: 24px; font-weight: bold; }
+.main-cat-section .item-contaner .valign > span span { position: absolute; bottom: 0; display: block; left: 0; width: 100%; color: #FFCC00; }
+.main-cat-section .item-contaner:hover .descr { opacity: 1; }
+.main-cat-section .item-contaner:hover .title { opacity: 0; }
+
+@media screen and (max-width: 1000px) {
+	.main-cat-section { width: 50%; }
+}
