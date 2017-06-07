@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Продавец. Заказы</title>
+	<link rel="stylesheet" href="../fonts.css">
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+	<!-- Start Nav -->	
+	<div class="nav">
+		<div class="container">
+			<div class="brand">
+				<img src="../images/logo.png" alt="">
+			</div>
+			<div class="nav-menu">
+				<ul>
+					<li class="active"><a href="#">Заказы</a></li>
+					<li><a href="#">Сообщения </a><span class="badge">999</span></li>
+					<li><a href="#">Товары</a></li>
+					<li><a href="#">Статистика</a></li>
+					<li><a href="#">Отзывы </a><span class="badge">999</span></li>
+					<li><a href="#">Настройки</a></li>
+				</ul>
+			</div>
+			<div class="nav-user">
+				<div class="user-name"><a href="#">admin.shop@mail.ru</a></div>
+				<div class="control">
+					<span class="basket">
+						<a href="#">67</a>
+						<span class="new-orders">
+							<a href="#">новые заказы</a>	
+						</span>
+						</span>
+					<button class="login-button">выйти</button>
+				</div>
+			</div>
+		</div>			
+	</div>
+	<!-- End Nav -->
+	<!-- Start Sub nav -->
+	<div class="container">
+		<div class="sub-nav">
+			<ul>
+				<li><a href="#">Каталог цветов</a></li>
+				<li><a href="#">Каталог цветов</a></li>
+				<li><a href="#">на карте</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- End Sub nav -->	
+	<!-- Start Filter pane -->
+	<div class="filter-pane pane">
+		<div class="container">
+			<ul>
+				<li class="active"><a href="#">Новые</a></li>
+				<li><a href="#">Принятые</a></li>
+				<li><a href="#">Готовые</a></li>
+				<li><a href="#">Приостановленные</a></li>
+				<li><a href="#">Закрытые</a></li>
+				<li><a href="#">Отмененные</a></li>
+			</ul>
+			<div class="help">
+				<a href="#">Нужна помощь?</a>
+			</div>
+		</div>
+	</div>
+	<!-- End Filter pane -->
+	<!-- Start orders -->
+	<div class="container">
+		<div class="orders">
+			<div class="count">
+				<span class="number">118</span>&nbsp;заказов
+			</div>
+			<table>
+				<thead>
+					<tr>
+						<th>Дата</th>
+						<th>Изображение</th>
+						<th>Детали заказа</th>
+						<th class="delivier">Условия поставки</th>
+						<th class="cost">Стоимость</th>
+						<th class="status">Статус заказа</th>
+						<th class="action">Действие</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="date"> <div class="date">24.05.2017,<br>9:30</div></td>
+						<td>
+							<div class="image-order">
+								<img src="../images/loading.png" />
+							</div>
+						</td>
+						<td>
+							<div class="details">
+								<span class="number-order"><a href="#">Заказ №00000</a></span>
+								<div class="name">
+									<span class="title">Наименование: </span>
+									<span class="content">Название товара длинное название где много букв всяких</span>
+								</div>
+								<div class="count-in">
+									<span class="title">Количество: </span>
+									<span class="content">1</span>
+								</div>
+								<div class="type-cost">
+									<span class="title">Способ оплаты: </span>
+									<span class="content">банковской картой</span>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="delivier">
+								<div class="type-delivier">курьером</div>
+								<div class="date-delivier">13.06.2017</div>
+								<div class="time-delivier">с 8:30 до 12:30</div>		
+							</div>
+						</td>
+						<td>
+							<span class="cost">10 BYN</span>
+						</td>
+						<td>
+							<div class="status">
+								<span class="paid">готов</span>
+							</div>														
+						</td>
+						<td>
+							<div class="action">
+								<button class="active">Заказ не передан</button>
+								<div class="timer">01:59:59</div>
+								<button class="ready">Подробнее</button>								
+							</div>							
+						</td>
+					</tr>
+					<tr>
+						<td class="date"> <div class="date">24.05.2017,<br>9:30</div></td>
+						<td>
+							<div class="image-order">
+								<img src="../images/loading.png" />
+							</div>
+						</td>
+						<td>
+							<div class="details">
+								<span class="number-order"><a href="#">Заказ №00000</a></span>
+								<div class="name">
+									<span class="title">Наименование: </span>
+									<span class="content">Название товара длинное название где много букв всяких</span>
+								</div>
+								<div class="count-in">
+									<span class="title">Количество: </span>
+									<span class="content">1</span>
+								</div>
+								<div class="type-cost">
+									<span class="title">Способ оплаты: </span>
+									<span class="content">банковской картой</span>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="delivier">
+								<div class="type-delivier">Самовывоз</div>
+								<div class="date-delivier">13.06.2017</div>
+								<div class="time-delivier">с 8:30 до 12:30</div>		
+							</div>
+						</td>
+						<td>
+							<span class="cost">10 BYN</span>
+						</td>
+						<td>
+							<div class="status">
+								<span class="paid">готов</span>
+							</div>														
+						</td>
+						<td>
+							<div class="action">
+								<button class="active">Заказ готов</button>
+								<div class="timer">01:59:59</div>
+								<button class="ready">Подробнее</button>
+							</div>							
+						</td>
+					</tr>					
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!-- End orders -->
+	<!-- Start More -->
+	<div class="more">
+		<div class="container">
+			<div class="show-more">
+				<a href="#">Следующие 20 заказов</a>
+			</div>
+			<div class="pagination">
+				<ul>
+					<li><a href="#">1</a></li>
+					<li class="current"><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">8</a></li>
+					<li><a href="#">9</a></li>
+					<li><a href="#">10</a></li>
+				</ul>
+			</div>
+		</div>		
+	</div>
+	<!-- End more -->
+	<!-- Start Footer -->
+	<div class="footer pane">
+		<div class="container">
+			<div class="right-part">
+				<div class="copyright"><span>&copy;</span> 2016 Florier</div>
+				<div class="social">
+					<ul>
+						<li><a href="#"><img src="../images/ico-vk.png"></a></li>
+						<li><a href="#"><img src="../images/ico-fb.png"></a></li>
+						<li><a href="#"><img src="../images/ico-inst.png"></a></li>
+					</ul>	
+				</div>				
+			</div>
+			<div class="footer-nav">
+				<div class="column">
+					<div class="title">Покупателям</div>
+					<ul>
+						<li><a href="#">Информационное соглашение</a></li>
+						<li><a href="#">Помощь</a></li>
+						<li><a href="#">Отзывы</a></li>
+					</ul>
+				</div>
+				<div class="column">
+					<div class="title">Продавцам</div>
+					<ul>
+						<li><a href="#">Публичная аферта</a></li>
+						<li><a href="#">Условия работы</a></li>						
+					</ul>
+				</div>
+				<div class="column">
+					<div class="title">Правила</div>
+					<ul>
+						<li><a href="#">Политика конфиденциальности</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Footer -->
+</body>
+</html>
