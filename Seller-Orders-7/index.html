@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Продавец. Заказы</title>
+	<link rel="stylesheet" href="../fonts.css">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+	<!-- Start Nav -->	
+	<div class="nav">
+		<div class="container">
+			<div class="brand">
+				<img src="../images/logo.png" alt="">
+			</div>
+			<div class="nav-menu">
+				<ul>
+					<li class="active"><a href="#">Заказы</a></li>
+					<li><a href="#">Сообщения </a><span class="badge">999</span></li>
+					<li><a href="#">Товары</a></li>
+					<li><a href="#">Статистика</a></li>
+					<li><a href="#">Отзывы </a><span class="badge">999</span></li>
+					<li><a href="#">Настройки</a></li>
+				</ul>
+			</div>
+			<div class="nav-user">
+				<div class="user-name"><a href="#">admin.shop@mail.ru</a></div>
+				<div class="control">
+					<span class="basket">
+						<a href="#">67</a>
+						<span class="new-orders">
+							<a href="#">новые заказы</a>	
+						</span>
+						</span>
+					<button class="login-button">выйти</button>
+				</div>
+			</div>
+		</div>			
+	</div>
+	<!-- End Nav -->
+	<!-- Start Sub nav -->
+	<div class="container">
+		<div class="sub-nav">
+			<ul>
+				<li><a href="#">Каталог цветов</a></li>
+				<li><a href="#">Каталог цветов</a></li>
+				<li><a href="#">на карте</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- End Sub nav -->	
+	<!-- Start Filter pane -->
+	<div class="filter-pane pane">
+		<div class="container">
+			<ul>
+				<li class="active"><a href="#">Новые</a></li>
+				<li><a href="#">Принятые</a></li>
+				<li><a href="#">Готовые</a></li>
+				<li><a href="#">Приостановленные</a></li>
+				<li><a href="#">Закрытые</a></li>
+				<li><a href="#">Отмененные</a></li>
+			</ul>
+			<div class="help">
+				<a href="#">Нужна помощь?</a>
+			</div>
+		</div>
+	</div>
+	<!-- End Filter pane -->
+	<!-- Start single order -->
+	<div class="container">
+		<div class="single-order">
+			<div class="details-order">
+				<div class="number-order">
+					<span class="content">Заказ №00000 от24.05.2017, 09:30</span>
+					<img src="../images/ico-close-red.png" />
+				</div>
+				<div class="row">
+					<div class="column">
+						<img src="../images/loading.png" alt="" class="order-image">
+						<div class="row">
+							<span class="title">Артикул</span>
+							<span class="content">000103</span>
+						</div>
+						<div class="row">
+							<span class="title">Название товара:</span>
+							<span class="content">
+								<a href="#">Название товара, длинное название где много букв всяких</a>
+							</span>
+						</div>
+						<div class="row">
+							<span class="title">Количество</span>
+							<span class="content">1 шт.</span>
+						</div>
+						<div class="row">
+							<span class="title">Цена за единицу</span>
+							<span class="content">10 BYN</span>
+						</div>
+						<div class="row">
+							<span class="title">Стоимость</span>
+							<span class="content">10 BYN</span>
+						</div>
+					</div>
+					<div class="column">
+						<div class="row">
+							<span class="title">Способ оплаты</span>
+							<span class="content">банковской картой</span>
+						</div>
+						<div class="row">
+							<span class="title">Доставка</span>
+							<span class="content">Курьером 24.05.2017 с 16:30 до 17:30</span>
+						</div>
+						<div class="row">
+							<span class="title">Адрес доставки</span>
+							<span class="content">г. Минск, ул.Иванова 3, кв. 13</span>
+						</div>
+						<div class="row">
+							<span class="title">Получатель</span>
+							<span class="content">Светлана Ивановна</span>
+						</div>
+						<div class="row">
+							<span class="title">Телефон</span>
+							<span class="content">+375 29 876 54 32</span>
+						</div>
+						<div class="row">
+							<span class="title">E-mail:</span>
+							<span class="content">test@test.by</span>
+						</div>
+						<div class="row">
+							<span class="title">Комментарий к доставке</span>
+							<span class="content">Позвоните за пол часа перед приездом, спасибо</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="state-order">
+				<div class="status success">
+					<span class="success-text">оплачен</span>
+					<span class="date success-text">24.05.2017, 10:00</span>
+				</div>
+				<div class="notice gray">
+					<span class="waiting-text">Окончание обработки заказа через: 44:59</span>
+					<div class="actions">
+						<button class="active">Принять заказ</button>
+						<button class="ready">Отменить заказ<sup>1</sup></button>
+					</div>
+					<div class="notice-content">
+						<span class="title">Внимание!</span>
+						<ol>
+							<li>Если вы не можете принять заказ, то отмените его.</li>
+							<li>В случае отмены заказа рейтинг вашего магазина будет снижен.</li>
+							<li>Во избежание отмены случаев отмены заказов всегда внимательно следите за наличем товара и актуальностью цен в личном кабинете.</li>
+							<li>Для снижения риска продажи отсутствующих товаров, настройте в свойствах каждого товара расписание его продажи - см. раздел "<a href="#">Условия поставки / продажи товара</a>"</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End single order -->
+	<!-- Start modal -->
+	
+	<!-- End modal -->
+	<!-- Start More -->
+	<div class="more">
+		<div class="container">
+			<div class="show-more">
+				<a href="#">Следующие 20 заказов</a>
+			</div>
+			<div class="pagination">
+				<ul>
+					<li><a href="#">1</a></li>
+					<li class="current"><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">8</a></li>
+					<li><a href="#">9</a></li>
+					<li><a href="#">10</a></li>
+				</ul>
+			</div>
+		</div>		
+	</div>
+	<!-- End more -->
+	<!-- Start Footer -->
+	<div class="footer pane">
+		<div class="container">
+			<div class="right-part">
+				<div class="copyright"><span>&copy;</span> 2016 Florier</div>
+				<div class="social">
+					<ul>
+						<li><a href="#"><img src="../images/ico-vk.png"></a></li>
+						<li><a href="#"><img src="../images/ico-fb.png"></a></li>
+						<li><a href="#"><img src="../images/ico-inst.png"></a></li>
+					</ul>	
+				</div>				
+			</div>
+			<div class="footer-nav">
+				<div class="column">
+					<div class="title">Покупателям</div>
+					<ul>
+						<li><a href="#">Информационное соглашение</a></li>
+						<li><a href="#">Помощь</a></li>
+						<li><a href="#">Отзывы</a></li>
+					</ul>
+				</div>
+				<div class="column">
+					<div class="title">Продавцам</div>
+					<ul>
+						<li><a href="#">Публичная аферта</a></li>
+						<li><a href="#">Условия работы</a></li>						
+					</ul>
+				</div>
+				<div class="column">
+					<div class="title">Правила</div>
+					<ul>
+						<li><a href="#">Политика конфиденциальности</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Footer -->
+</body>
+</html>

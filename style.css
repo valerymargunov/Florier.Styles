@@ -2386,12 +2386,11 @@ a.ui-button:active,
   .footer .right-part {
     width: 200px;
     float: left;
-    margin-top: 30px; }
+    margin-top: 10px; }
     .footer .right-part .copyright {
       color: #FFFFFF;
-      font-size: 18;
-      font-weight: bolder;
-      letter-spacing: 2px; }
+      font-weight: 700;
+      letter-spacing: 1.5px; }
       .footer .right-part .copyright span {
         font-weight: 200;
         font-size: 20px; }
@@ -2403,25 +2402,29 @@ a.ui-button:active,
       overflow: auto; }
       .footer .right-part .social ul li {
         float: left;
-        padding: 8px; }
+        padding: 8px;
+        margin-right: 3px; }
   .footer .footer-nav {
     float: left;
     width: 1050px; }
     .footer .footer-nav .column {
-      width: 22%;
+      width: 25%;
       padding: 0 15px;
       font-size: 16px;
-      float: left; }
+      float: left;
+      letter-spacing: 0.5px; }
       .footer .footer-nav .column .title {
         color: #FFFFFF;
         margin-top: 15px;
-        font-weight: 600; }
+        font-weight: 700;
+        margin-left: 5px; }
       .footer .footer-nav .column ul {
         padding-top: 10px;
         list-style-type: none;
         margin: 0;
         padding: 0;
-        overflow: auto; }
+        overflow: auto;
+        font-weight: 100; }
         .footer .footer-nav .column ul li {
           padding: 5px; }
           .footer .footer-nav .column ul li a {
@@ -2519,7 +2522,7 @@ a.ui-button:active,
 /*Start more*/
 .more {
   background: #e6e6e6;
-  line-height: 2.5;
+  line-height: 3;
   position: relative; }
   .more .show-more {
     width: 100%;
@@ -2543,34 +2546,37 @@ a.ui-button:active,
   .more .pagination {
     position: absolute;
     right: 60px;
-    top: 3px;
+    top: 5px;
     background: #FFFFFF;
-    padding: 2px 20px;
-    border: 1px solid #666666;
-    -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px; }
+    padding: 2px 40px;
+    border: 1px solid #999;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px; }
     .more .pagination ul {
       list-style-type: none;
       margin: 0;
       font-weight: 400;
-      line-height: 1.5;
+      line-height: 1.8;
       padding: 2px; }
       .more .pagination ul li {
         display: inline;
-        padding: 0px 6px;
-        font-size: 14px; }
+        padding: 0px 2px;
+        font-size: 15px;
+        margin-top: 8px; }
         .more .pagination ul li a {
           font-weight: bolder;
           color: #333333;
           display: inline-block;
           text-align: center;
-          padding-right: 3px;
+          padding-right: 2px;
           text-decoration: none; }
       .more .pagination ul .current {
         -webkit-border-radius: 5px;
            -moz-border-radius: 5px;
                 border-radius: 5px;
         background: #FF0066; }
+        .more .pagination ul .current a {
+          color: #FFFFFF; }
 
 /*End more*/
