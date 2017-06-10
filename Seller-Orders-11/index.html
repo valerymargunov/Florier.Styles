@@ -71,7 +71,7 @@
 			<div class="details-order">
 				<div class="number-order">
 					<span class="content">Заказ №00000 от24.05.2017, 09:30</span>
-					<img src="../images/ico-close-red.png" />
+					<a href="#"><img src="../images/ico-close-red.png" /></a>
 				</div>
 				<div class="row">
 					<div class="column">
@@ -132,25 +132,35 @@
 				</div>
 			</div>
 			<div class="state-order">
-				<div class="status success">
-					<span class="success-text">оплачен</span>
-					<span class="date success-text">24.05.2017, 10:00</span>
+				<div class="status waiting">
+					<span class="waiting-text">приостановлен</span>
+					<span class="date waiting-text">24.05.2017, 10:00</span>
 				</div>
 				<div class="notice gray buffer">
-					<span class="waiting-text">Окончание обработки заказа через: 44:59</span>
+					<span class="waiting-text">На решение проблемы<sup>3</sup> осталось: 01:19:59</span>
 					<div class="actions">
-						<button class="active">Принять заказ</button>
-						<a href="#openModal" class="button"><button class="ready">Отменить заказ<sup>1</sup></button></a>
+						<button class="active">Проблема решена<sup>5</sup></button>						
 					</div>
 					<div class="notice-content">
 						<span class="title">Внимание!</span>
 						<ol>
-							<li>Если вы не можете принять заказ, то отмените его.</li>
-							<li>В случае отмены заказа рейтинг вашего магазина будет снижен.</li>
-							<li>Во избежание отмены случаев отмены заказов всегда внимательно следите за наличем товара и актуальностью цен в личном кабинете.</li>
-							<li>Для снижения риска продажи отсутствующих товаров, настройте в свойствах каждого товара расписание его продажи - см. раздел "<a href="#">Условия поставки / продажи товара</a>"</li>
+							<li>Не ждите пока покупатель выйдет с вами на связь - свяжитесь с ним первым.</li>
+							<li>Если вы найдете взаимовыгодное решение, то нажмите "<a href="#">Проблема решена</a>" заказ будет закрыт со статусом "Завершен успешно". Оплата заказа поступит к вам в ближайщее время!</li>
+							<li>Если покупатель не свяжется с вами в течении 2 часов или вы не сможете решить возникшую проблему, то не нажимайте ничего в этом сообщении. Заказ будет закрыт со статусом "Аннулирован (не передан покупателю)". Покупателю будут возвращены деньги за покупку.</li>
 						</ol>
 					</div>
+				</div>
+				<div class="status success buffer">
+					<span class="success-text">готов</span>
+					<span class="date success-text">24.05.2017, 10:00</span>
+				</div>
+				<div class="status success buffer">
+					<span class="success-text">принят продавцом</span>
+					<span class="date success-text">24.05.2017, 10:00</span>
+				</div>
+				<div class="status success buffer-bottom">
+					<span class="success-text">оплачен</span>
+					<span class="date success-text">24.05.2017, 10:00</span>
 				</div>
 			</div>
 		</div>

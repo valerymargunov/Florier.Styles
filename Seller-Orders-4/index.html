@@ -5,6 +5,7 @@
 	<title>Продавец. Заказы</title>
 	<link rel="stylesheet" href="../fonts.css">
 	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
 	<!-- Start Nav -->	
@@ -31,7 +32,7 @@
 						<span class="new-orders">
 							<a href="#">новые заказы</a>	
 						</span>
-						</span>
+					</span>
 					<button class="login-button">выйти</button>
 				</div>
 			</div>
@@ -59,10 +60,8 @@
 				<li><a href="#">Приостановленные</a></li>
 				<li><a href="#">Закрытые</a></li>
 				<li><a href="#">Отмененные</a></li>
+				<li class="help"><a href="#">Нужна помощь?</a></li>
 			</ul>
-			<div class="help">
-				<a href="#">Нужна помощь?</a>
-			</div>
 		</div>
 	</div>
 	<!-- End Filter pane -->
@@ -78,21 +77,21 @@
 						<th>Дата</th>
 						<th>Изображение</th>
 						<th>Детали заказа</th>
-						<th class="delivier">Условия поставки</th>
-						<th class="cost">Стоимость</th>
-						<th class="status">Статус заказа</th>
-						<th class="action">Действие</th>
+						<th>Условия поставки</th>
+						<th>Стоимость</th>
+						<th>Статус заказа</th>
+						<th>Действие</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td class="date"> <div class="date">24.05.2017,<br>9:30</div></td>
+						<td valign="top"> <div class="date">24.05.2017,<br>9:30</div></td>
 						<td>
 							<div class="image-order">
 								<img src="../images/loading.png" />
 							</div>
 						</td>
-						<td>
+						<td valign="top">
 							<div class="details">
 								<span class="number-order"><a href="#">Заказ №00000</a></span>
 								<div class="name">
@@ -109,22 +108,22 @@
 								</div>
 							</div>
 						</td>
-						<td>
+						<td valign="top">
 							<div class="delivier">
 								<div class="type-delivier">курьером</div>
 								<div class="date-delivier">13.06.2017</div>
 								<div class="time-delivier">с 8:30 до 12:30</div>		
 							</div>
 						</td>
-						<td>
+						<td valign="top">
 							<span class="cost">10 BYN</span>
 						</td>
-						<td>
+						<td valign="top">
 							<div class="status">
 								<span class="paid">готов</span>
 							</div>														
 						</td>
-						<td>
+						<td valign="top">
 							<div class="action">
 								<button class="active">Заказ не передан</button>
 								<div class="timer">01:59:59</div>
@@ -133,13 +132,13 @@
 						</td>
 					</tr>
 					<tr>
-						<td class="date"> <div class="date">24.05.2017,<br>9:30</div></td>
+						<td valign="top"> <div class="date">24.05.2017,<br>9:30</div></td>
 						<td>
 							<div class="image-order">
 								<img src="../images/loading.png" />
 							</div>
 						</td>
-						<td>
+						<td valign="top">
 							<div class="details">
 								<span class="number-order"><a href="#">Заказ №00000</a></span>
 								<div class="name">
@@ -156,22 +155,22 @@
 								</div>
 							</div>
 						</td>
-						<td>
+						<td valign="top">
 							<div class="delivier">
 								<div class="type-delivier">Самовывоз</div>
 								<div class="date-delivier">13.06.2017</div>
 								<div class="time-delivier">с 8:30 до 12:30</div>		
 							</div>
 						</td>
-						<td>
+						<td valign="top">
 							<span class="cost">10 BYN</span>
 						</td>
-						<td>
+						<td valign="top">
 							<div class="status">
 								<span class="paid">готов</span>
 							</div>														
 						</td>
-						<td>
+						<td valign="top">
 							<div class="action">
 								<button class="active">Заказ готов</button>
 								<div class="timer">01:59:59</div>

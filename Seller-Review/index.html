@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Продавец. Заказы</title>
+	<link rel="stylesheet" href="../fonts.css">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+	<!-- Start Nav -->	
+	<div class="nav">
+		<div class="container">
+			<div class="brand">
+				<img src="../images/logo.png" alt="">
+			</div>
+			<div class="nav-menu">
+				<ul>
+					<li class="active"><a href="#">Заказы</a></li>
+					<li><a href="#">Сообщения </a><span class="badge">999</span></li>
+					<li><a href="#">Товары</a></li>
+					<li><a href="#">Статистика</a></li>
+					<li><a href="#">Отзывы </a><span class="badge">999</span></li>
+					<li><a href="#">Настройки</a></li>
+				</ul>
+			</div>
+			<div class="nav-user">
+				<div class="user-name"><a href="#">admin.shop@mail.ru</a></div>
+				<div class="control">
+					<span class="basket">
+						<a href="#">67</a>
+						<span class="new-orders">
+							<a href="#">новые заказы</a>	
+						</span>
+					</span>
+					<button class="login-button">выйти</button>
+				</div>
+			</div>
+		</div>			
+	</div>
+	<!-- End Nav -->
+	<!-- Start Sub nav -->
+	<div class="container">
+		<div class="sub-nav">
+			<ul>
+				<li><a href="#">Каталог цветов</a></li>
+				<li><a href="#">Каталог цветов</a></li>
+				<li><a href="#">на карте</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- End Sub nav -->	
+	<!-- Start Filter pane -->
+	<div class="filter-pane pane">
+		<div class="container">
+			<ul>
+				<li class="active"><a href="#">О товарах и услугах</a></li>
+				<li class="help"><a href="#">Нужна помощь?</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- End Filter pane -->
+	<!-- Start reviews -->
+	<div class="container">
+		<div class="reviews">
+		<!-- Start rating with sort -->
+			<div class="count">
+				<ul>
+					<li><span class="fill-star"></span></li>
+					<li><span class="fill-star"></span></li>
+					<li><span class="fill-star"></span></li>
+					<li><span class="fill-star"></span></li>
+					<li><span class="empty-star"></span></li>
+				</ul>
+				<span>Средняя оценка магазина <span class="number">3.8</span>&nbsp;(<span class="number">32</span>&nbsp; отзыва)</span>
+				<div class="sort">
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn">
+							Сортировать по
+					  		<img src="../images/ico-pseudo-select.png">
+					  	</button>
+						<div id="myDropdown" class="dropdown-content">
+							<a class="active" href="#positive">Положительные</a>
+							<a href="#nagative">Отрицательные</a>
+							<a href="#neutral">Нейтральные</a>
+						</div>
+					</div>				  	
+				</div>
+			</div>
+			<!-- End rating with sort -->
+			<table>
+				<thead>
+					<tr>
+						<th valign="top">Дата</th>
+						<th valign="top">№ заказа</th>
+						<th valign="top">Оценка</th>
+						<th valign="top">Отзыв</th>
+						<th valign="top">Доставка</th>
+						<th valign="top">Соответствие описанию</th>
+						<th valign="top">Обслуживание клиентов</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td valign="top"> <div class="date">24.05.2017</div></td>
+						<td valign="top">
+							<a href="#">3856-asdsdfsd</a>
+						</td>
+						<td valign="top">
+							<div class="value">
+								5
+							</div>
+						</td>
+						<td valign="top">
+							<divv class="review">
+								<div class="answer">Все нормально. Девушка довольна как слон</div>
+								<hr>
+								<div class="action">
+									<a href="#addAnswer"><button>Написать ответ</button></a>
+								</div>
+								
+							</divv>
+						</td>
+						<td valign="top">
+							5
+						</td>
+						<td valign="top">
+							5													
+						</td>
+						<td valign="top">
+							-						
+						</td>
+					</tr>
+					<tr>
+						<td valign="top"> <div class="date">24.05.2017</div></td>
+						<td valign="top">
+							<a href="#">3856-asdsdfsd</a>
+						</td>
+						<td valign="top">
+							<div class="value">
+								5
+							</div>
+						</td>
+						<td valign="top">
+							<div class="review">
+								<div class="user-review">Букет получился неплохой, но подвела доставка - опоздали на полчаса!</div>
+								<hr>
+								<div class="answer">
+									<span class="title">Ваш ответ: </span><span class="content">Извините это произошло из-за большой пробки на проспекте Держинского. Мы исправимся! )</span>
+								</div>
+								<div class="action">
+									<a href="#changeAnswer"><button>Изменить ответ</button></a>
+								</div>								
+							</div>
+						</td>
+						<td valign="top">
+							3
+						</td>
+						<td valign="top">
+							5													
+						</td>
+						<td valign="top">
+							5						
+						</td>
+					</tr>
+					<tr>
+						<td valign="top"> <div class="date">24.05.2017</div></td>
+						<td valign="top">
+							<a href="#">3856-asdsdfsd</a>
+						</td>
+						<td valign="top">
+							<div class="value">
+								4
+							</div>
+						</td>
+						<td valign="top">
+							<div class="review">
+								<div class="user-review">Старые цветы, завяли на завтра(</div>
+								<hr>
+								<div class="answer"></div>
+								<div class="action">
+									<a href="#addAnswer"><button>Написать ответ</button></a>
+								</div>
+								
+							</div>
+						</td>
+						<td valign="top">
+							5
+						</td>
+						<td valign="top">
+							3													
+						</td>
+						<td valign="top">
+							2					
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!-- End orders -->
+	<!-- Start More -->
+	<div class="more">
+		<div class="container">
+			<div class="show-more">
+				<a href="#">Следующие 20 заказов</a>
+			</div>
+			<div class="pagination">
+				<ul>
+					<li><a href="#">1</a></li>
+					<li class="current"><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">8</a></li>
+					<li><a href="#">9</a></li>
+					<li><a href="#">10</a></li>
+				</ul>
+			</div>
+		</div>		
+	</div>
+	<!-- End more -->
+	<!-- Start modal -->
+	<div id="addAnswer" class="modalDialog">
+		<div class="modal-container">			
+			<div class="header"><img src="../images/logo-white.png" alt=""></div>
+			<div class="body answer">		
+			<a href="#close" title="Close" class="close"><img src="../images/fb-close.png"></a>	
+				<div class="title light-title">
+					<span>Ваш ответ</span>
+				</div>
+				<div class="description">
+					<div class="text">
+						<textarea placeholder="Текст вашего сообщения" rows="7"></textarea>
+					</div>
+					<button class="active answer-button">Отправить</button>
+					<div class="hide"><a href="#Close" class="hideModal">Отмена</a></div>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<!-- End modal -->
+	<!-- Start modal -->
+	<div id="changeAnswer" class="modalDialog">
+		<div class="modal-container">			
+			<div class="header"><img src="../images/logo-white.png" alt=""></div>
+			<div class="body answer">		
+			<a href="#close" title="Close" class="close"><img src="../images/fb-close.png"></a>	
+				<div class="title light-title">
+					<span>Изменить ответ</span>
+				</div>
+				<div class="description">
+					<div class="text">
+						<textarea placeholder="Текст вашего сообщения" rows="7">Извините это произошло из-за большой пробки на проспекте Держинского. Мы исправимся! )</textarea>
+					</div>
+					<button class="active answer-button">Отправить</button>
+					<div class="hide"><a href="#Close" class="hideModal">Отмена</a></div>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<!-- End modal -->
+	<!-- Start Footer -->
+	<div class="footer pane">
+		<div class="container">
+			<div class="right-part">
+				<div class="copyright"><span>&copy;</span> 2016 Florier</div>
+				<div class="social">
+					<ul>
+						<li><a href="#"><img src="../images/ico-vk.png"></a></li>
+						<li><a href="#"><img src="../images/ico-fb.png"></a></li>
+						<li><a href="#"><img src="../images/ico-inst.png"></a></li>
+					</ul>	
+				</div>				
+			</div>
+			<div class="footer-nav">
+				<div class="column">
+					<div class="title">Покупателям</div>
+					<ul>
+						<li><a href="#">Информационное соглашение</a></li>
+						<li><a href="#">Помощь</a></li>
+						<li><a href="#">Отзывы</a></li>
+					</ul>
+				</div>
+				<div class="column">
+					<div class="title">Продавцам</div>
+					<ul>
+						<li><a href="#">Публичная аферта</a></li>
+						<li><a href="#">Условия работы</a></li>						
+					</ul>
+				</div>
+				<div class="column">
+					<div class="title">Правила</div>
+					<ul>
+						<li><a href="#">Политика конфиденциальности</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Footer -->
+	<script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		    document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+
+		    var dropdowns = document.getElementsByClassName("dropdown-content");
+		    var i;
+		    for (i = 0; i < dropdowns.length; i++) {
+		      var openDropdown = dropdowns[i];
+		      if (openDropdown.classList.contains('show')) {
+		        openDropdown.classList.remove('show');
+		      }
+		    }
+		  }
+		}
+		</script>
+</body>
+</html>
