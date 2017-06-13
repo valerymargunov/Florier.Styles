@@ -2143,10 +2143,17 @@ a.ui-button:active,
   .nav a {
     color: #333333; }
   .nav .brand {
-    float: left; }
-    .nav .brand img {
-      margin-top: 3px;
-      max-height: 32px; }
+    float: left;
+    display: block;
+    height: 50px;
+    width: 180px;
+    background: url(../FLorierSource/images/FL_black.png) 50% 50% no-repeat; }
+    .nav .brand:hover {
+      -webkit-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+      background: url(../FLorierSource/images/FL_yellow.png) 50% 50% no-repeat; }
   .nav .nav-menu {
     float: left; }
     .nav .nav-menu ul {
@@ -2163,15 +2170,21 @@ a.ui-button:active,
           text-align: center;
           padding-right: 3px;
           text-decoration: none;
-          /* Change the link color to #111 (black) on hover */ }
+          position: relative; }
           .nav .nav-menu ul li a:hover {
-            color: #ffcc00;
             text-decoration: none;
-            border-bottom: 2px solid #ffcc00;
             -webkit-transition: all 0.2s ease-out;
             -o-transition: all 0.2s ease-out;
             -moz-transition: all 0.2s ease-out;
             transition: all 0.2s ease-out; }
+            .nav .nav-menu ul li a:hover:before {
+              border: 1px solid #ffcc00;
+              color: #ffcc00;
+              position: absolute;
+              top: 100%;
+              right: 0;
+              left: 0;
+              content: ""; }
         .nav .nav-menu ul li .badge {
           display: inline-block;
           min-width: 10px;
@@ -2549,6 +2562,8 @@ a.ui-button:active,
       font-size: 15px;
       font-weight: 700;
       padding-bottom: 4px; }
+      .orders table thead th:first-child {
+        padding-left: 10px; }
   .orders table tbody tr {
     border-bottom: 2px solid #d8d8d8;
     font-weight: 100; }
@@ -2886,7 +2901,8 @@ a.ui-button:active,
           cursor: pointer; }
         .single-order .state-order .notice .actions .active {
           color: #333333;
-          background: #ffcc00; }
+          background: #ffcc00;
+          border: 1px solid #ffcc00; }
           .single-order .state-order .notice .actions .active:hover {
             border: 1px solid #ffcc00;
             background: #fff0b3; }
@@ -2991,7 +3007,8 @@ a.ui-button:active,
           cursor: pointer;
           background: #ffcc00;
           font-size: 18px;
-          color: #333333; }
+          color: #333333;
+          border: 1px solid #ffcc00; }
           .modalDialog .modal-container .body .description .active:hover {
             border: 1px solid #ffcc00;
             background: #fff0b3; }
