@@ -2147,13 +2147,13 @@ a.ui-button:active,
     display: block;
     height: 50px;
     width: 180px;
-    background: url(../FLorierSource/images/FL_black.png) 50% 50% no-repeat; }
+    background: url(images/FL_black.png) 50% 50% no-repeat; }
     .nav .brand:hover {
       -webkit-transition: all 0.2s ease-out;
       -o-transition: all 0.2s ease-out;
       -moz-transition: all 0.2s ease-out;
       transition: all 0.2s ease-out;
-      background: url(../FLorierSource/images/FL_yellow.png) 50% 50% no-repeat; }
+      background: url(images/FL_yellow.png) 50% 50% no-repeat; }
   .nav .nav-menu {
     float: left; }
     .nav .nav-menu ul {
@@ -2172,6 +2172,7 @@ a.ui-button:active,
           text-decoration: none;
           position: relative; }
           .nav .nav-menu ul li a:hover {
+            color: #ffcc00;
             text-decoration: none;
             -webkit-transition: all 0.2s ease-out;
             -o-transition: all 0.2s ease-out;
@@ -2252,7 +2253,7 @@ a.ui-button:active,
         text-align: center;
         white-space: nowrap;
         vertical-align: middle;
-        background: url(../FLorierSource/images/ico-order.png) 50% 50% no-repeat;
+        background: url(images/ico-order.png) 50% 50% no-repeat;
         -webkit-background-size: cover;
            -moz-background-size: cover;
              -o-background-size: cover;
@@ -2286,7 +2287,7 @@ a.ui-button:active,
             display: inline; }
             .nav .nav-user .control .basket .new-orders a:after {
               position: absolute;
-              top: -7px;
+              top: -4px;
               left: 40%;
               height: 0px;
               content: "";
@@ -2322,7 +2323,7 @@ a.ui-button:active,
       font-size: 14px; }
       .sub-nav ul li:nth-last-child(n+2) a:after {
         margin-left: 5px;
-        content: url("../FLorierSource/images/ico-arrow.png"); }
+        content: url("images/ico-arrow.png"); }
       .sub-nav ul li:last-child a {
         text-decoration: underline; }
       .sub-nav ul li a {
@@ -2387,7 +2388,35 @@ a.ui-button:active,
 
 /*End filter-pane*/
 /*Start progress*/
-.progress .no-ready {
+.progress .tooltip {
+  font-weight: 700;
+  width: 105px;
+  background: #FFFFFF;
+  text-align: center;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  border: 1px solid #FF0066;
+  padding: 1px;
+  line-height: 1;
+  font-size: 12px;
+  position: absolute;
+  z-index: 1;
+  top: -20px;
+  left: 16px;
+  margin-left: -60px; }
+  .progress .tooltip:after {
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    position: absolute;
+    bottom: -4px;
+    left: 40%;
+    height: 0;
+    content: "";
+    width: 0; }
+
+.progress a .no-ready {
   position: relative;
   margin-right: 2px;
   display: inline-block;
@@ -2397,42 +2426,18 @@ a.ui-button:active,
      -moz-border-radius: 50%;
           border-radius: 50%;
   background: #FF0066; }
-  .progress .no-ready .tooltip {
-    width: 100px;
+  .progress a .no-ready .tooltip {
     visibility: hidden;
-    background: #FFFFFF;
     color: #FF0066;
-    text-align: center;
-    -webkit-border-radius: 6px;
-       -moz-border-radius: 6px;
-            border-radius: 6px;
-    border: 1px solid #FF0066;
-    padding: 1px;
-    line-height: 1;
-    font-size: 12px;
-    position: absolute;
-    z-index: 1;
-    top: -20px;
-    left: 17px;
-    margin-left: -60px; }
-    .progress .no-ready .tooltip:after {
-      -webkit-border-radius: 5px;
-         -moz-border-radius: 5px;
-              border-radius: 5px;
+    border: 1px solid #FF0066; }
+    .progress a .no-ready .tooltip:after {
       color: #FF0066;
-      position: absolute;
-      bottom: -5px;
-      left: 40%;
-      height: 0;
-      content: "";
-      width: 0;
       border-left: 4px solid transparent;
       border-right: 4px solid transparent;
       border-top: 4px solid #FF0066; }
-  .progress .no-ready:hover {
-    background: #FF0066; }
-    .progress .no-ready:hover .tooltip {
-      visibility: visible; }
+
+.progress a:hover .tooltip {
+  visibility: visible; }
 
 .progress .ready {
   position: relative;
@@ -2445,34 +2450,11 @@ a.ui-button:active,
           border-radius: 50%;
   background: #7FF68D; }
   .progress .ready .tooltip {
-    width: 100px;
     visibility: visible;
-    background: #FFFFFF;
     color: #7FF68D;
-    text-align: center;
-    -webkit-border-radius: 6px;
-       -moz-border-radius: 6px;
-            border-radius: 6px;
-    border: 1px solid #7FF68D;
-    padding: 1px;
-    line-height: 1;
-    font-size: 12px;
-    position: absolute;
-    z-index: 1;
-    top: -20px;
-    left: 17px;
-    margin-left: -60px; }
+    border: 1px solid #7FF68D; }
     .progress .ready .tooltip:after {
-      -webkit-border-radius: 5px;
-         -moz-border-radius: 5px;
-              border-radius: 5px;
       color: #7FF68D;
-      position: absolute;
-      bottom: -5px;
-      left: 40%;
-      height: 0;
-      content: "";
-      width: 0;
       border-left: 4px solid transparent;
       border-right: 4px solid transparent;
       border-top: 4px solid #7FF68D; }
@@ -2548,96 +2530,98 @@ a.ui-button:active,
   .orders .count .number {
     font-weight: 700; }
 
-.orders table {
+/*End orders*/
+/*Start table*/
+table {
   font-weight: normal;
   font-size: 16px;
   margin-bottom: 40px;
   border-collapse: collapse;
   color: #4a5658; }
-  .orders table thead {
+  table thead {
     border-bottom: 2px solid #d8d8d8;
     font-weight: 100; }
-    .orders table thead th {
+    table thead th {
       text-align: left;
       font-size: 15px;
       font-weight: 700;
       padding-bottom: 4px; }
-      .orders table thead th:first-child {
+      table thead th:first-child {
         padding-left: 10px; }
-  .orders table tbody tr {
+  table tbody tr {
     border-bottom: 2px solid #d8d8d8;
     font-weight: 100; }
-    .orders table tbody tr:hover {
+    table tbody tr:hover {
       background: #f9f9f9;
       -webkit-transition: all 0.2s ease-out;
       -o-transition: all 0.2s ease-out;
       -moz-transition: all 0.2s ease-out;
       transition: all 0.2s ease-out; }
-  .orders table .date {
-    width: 75px;
+  table .date {
+    width: 90px;
     margin-top: 3px;
     margin-left: 5px; }
-  .orders table .image-order {
+  table .image-order {
     width: 110px; }
-    .orders table .image-order img {
+    table .image-order img {
       max-width: 70px;
       max-height: 70px;
       padding: 20px; }
-  .orders table .details {
+  table .details {
     padding: 3px;
-    width: 500px;
+    width: 490px;
     vertical-align: top; }
-    .orders table .details .number-order a {
+    table .details .number-order a {
       font-weight: 700;
       color: #0066cc; }
-    .orders table .details .title {
+    table .details .title {
       font-weight: 700; }
-    .orders table .details .content {
+    table .details .content {
       font-weight: 100; }
-  .orders table .delivier {
+  table .delivier {
     width: 150px;
     vertical-align: top;
     margin-top: 3px; }
-  .orders table .cost {
+  table .cost {
     width: 110px;
     vertical-align: top;
     margin-top: 6px;
     display: inline-block; }
-  .orders table .status {
+  table .status {
     width: 110px;
     font-weight: 700;
     vertical-align: top;
     margin-top: 3px; }
-    .orders table .status .paid {
+    table .status .paid {
       color: #7FF68D; }
-    .orders table .status .waiting {
+    table .status .waiting {
       color: #FF0066; }
-  .orders table .action {
+  table .action {
     width: 130px;
     margin-right: 10px;
     margin-top: 6px; }
-    .orders table .action button {
+    table .action button {
       padding: 7px 0;
       width: 100%;
       border: 0;
       font-weight: 700;
       cursor: pointer; }
-    .orders table .action .timer {
+    table .action .timer {
       text-align: center;
       width: 100%;
       font-weight: 900;
       color: #FF0066;
       padding: 6px 0; }
-    .orders table .action .active {
+    table .action .active {
       background: #ffcc00; }
-    .orders table .action .ready {
+    table .action .ready {
       border: 1px solid #ffcc00;
       background: #FFFFFF; }
-    .orders table .action .inactive {
+    table .action .inactive {
       border: 1px solid #ffcc00;
       background: #fff0b3; }
 
-/*End orders*/
+/*End table*/
 /*Start reviews*/
 .reviews .count {
   font-weight: 100;
@@ -2656,7 +2640,7 @@ a.ui-button:active,
         display: inline-block;
         width: 21px;
         height: 17px;
-        background-image: url("../FlorierSource/images/stars.png"); }
+        background-image: url("images/stars.png"); }
       .reviews .count ul li .empty-star {
         background-position: top; }
       .reviews .count ul li .fill-star {
@@ -2710,25 +2694,17 @@ a.ui-button:active,
       display: block; }
 
 .reviews table {
-  border-collapse: collapse;
-  margin-bottom: 30px;
   width: 1150px;
   margin-left: 15px; }
-  .reviews table tr:nth-child(even) {
-    background: #e6e6e6; }
+  .reviews table th {
+    vertical-align: bottom; }
   .reviews table td, .reviews table th {
     color: #333333;
-    -webkit-border-radius: 0;
-       -moz-border-radius: 0;
-            border-radius: 0;
-    border: 1px solid #999;
-    padding: 10px 15px; }
+    padding: 5px 0;
+    min-width: 120px; }
     .reviews table td a, .reviews table th a {
-      color: #333333; }
-  .reviews table th {
-    text-align: left;
-    font-size: 15px;
-    font-weight: 700; }
+      color: #0066cc;
+      font-weight: 700; }
   .reviews table .action {
     width: 130px;
     margin-right: 10px;
@@ -2862,16 +2838,20 @@ a.ui-button:active,
     .single-order .state-order .success {
       border: 1px solid #7FF68D; }
     .single-order .state-order .success-text {
+      margin-top: 2px;
       color: #7FF68D;
       font-weight: 700; }
     .single-order .state-order .waiting {
       border: 1px solid #FF0066; }
     .single-order .state-order .waiting-text {
+      margin-top: 2px;
       color: #FF0066;
       font-weight: 700; }
     .single-order .state-order .gray {
       border: 1px solid #cccccc; }
     .single-order .state-order .gray-text {
+      margin-left: 15px;
+      font-weight: 100;
       color: #cccccc; }
     .single-order .state-order .status {
       width: 100%;
@@ -2955,21 +2935,21 @@ a.ui-button:active,
     position: relative;
     background: transparent;
     margin: 5% auto;
-    width: 300px; }
+    width: 350px; }
     .modalDialog .modal-container .header {
       text-align: center;
       margin-bottom: 30px; }
     .modalDialog .modal-container .body {
       position: relative;
       background: #FFFFFF;
-      width: 280px;
-      height: 270px;
+      width: 300px;
+      height: 260px;
       padding: 5px 20px 13px 20px;
       -webkit-border-radius: 20px;
          -moz-border-radius: 20px;
               border-radius: 20px;
       margin: 10px;
-      font-size: 20px; }
+      font-size: 18px; }
       .modalDialog .modal-container .body .close {
         position: absolute;
         top: 0;
@@ -2983,21 +2963,23 @@ a.ui-button:active,
       .modalDialog .modal-container .body .description {
         font-weight: 100;
         margin-top: 25px; }
-        .modalDialog .modal-container .body .description .radio input[type="radio"] {
-          display: none; }
-        .modalDialog .modal-container .body .description .radio input[type="radio"] + label {
-          margin-top: 15px;
-          float: left;
-          cursor: pointer; }
-          .modalDialog .modal-container .body .description .radio input[type="radio"] + label .image {
+        .modalDialog .modal-container .body .description .radio {
+          margin-top: 15px; }
+          .modalDialog .modal-container .body .description .radio input[type="radio"] {
+            display: none; }
+          .modalDialog .modal-container .body .description .radio input[type="radio"] + label {
+            margin-top: 5px;
             float: left;
-            display: block;
-            height: 14px;
-            width: 14px;
-            margin: 8px;
-            background-image: url("../FlorierSource/images/ico-radio.png"); }
-        .modalDialog .modal-container .body .description .radio input[type="radio"]:checked + label .image {
-          background-image: url("../FlorierSource/images/ico-radio-active.png"); }
+            cursor: pointer; }
+            .modalDialog .modal-container .body .description .radio input[type="radio"] + label .image {
+              float: left;
+              display: block;
+              height: 14px;
+              width: 14px;
+              margin: 8px;
+              background-image: url("images/ico-radio.png"); }
+          .modalDialog .modal-container .body .description .radio input[type="radio"]:checked + label .image {
+            background-image: url("images/ico-radio-active.png"); }
         .modalDialog .modal-container .body .description .active {
           margin: 20px auto;
           width: 100%;
