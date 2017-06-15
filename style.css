@@ -2246,6 +2246,7 @@ a.ui-button:active,
               border-radius: 8px;
       border: 1px solid #e3e3e3; }
       .nav .nav-user .control .basket {
+        position: relative;
         font-weight: 400;
         padding: 4px;
         font-size: 11px;
@@ -2267,26 +2268,33 @@ a.ui-button:active,
           vertical-align: middle;
           display: inline-block; }
           .nav .nav-user .control .basket a:hover {
-            text-decoration: underline;
+            text-decoration: none;
             -webkit-transition: all 0.2s ease-out;
             -o-transition: all 0.2s ease-out;
             -moz-transition: all 0.2s ease-out;
             transition: all 0.2s ease-out; }
         .nav .nav-user .control .basket .new-orders {
+          visibility: hidden;
           position: absolute;
           background: #FFFFFF;
-          top: 38px;
-          right: 55px;
+          top: 33px;
+          right: -37px;
           font-size: 14px; }
-          .nav .nav-user .control .basket .new-orders a {
+          .nav .nav-user .control .basket .new-orders span {
+            background: #FFFFFF;
             font-weight: 700;
             -webkit-border-radius: 5px;
                -moz-border-radius: 5px;
                     border-radius: 5px;
             color: #FF0066;
             border: 1px solid #FF0066;
-            display: inline; }
-            .nav .nav-user .control .basket .new-orders a:after {
+            display: block;
+            -webkit-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            -moz-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+            text-decoration: none; }
+            .nav .nav-user .control .basket .new-orders span:after {
               position: absolute;
               top: -4px;
               left: 40%;
@@ -2296,6 +2304,9 @@ a.ui-button:active,
               border-left: 4px solid transparent;
               border-right: 4px solid transparent;
               border-bottom: 4px solid #FF0066; }
+        .nav .nav-user .control .basket:hover .new-orders {
+          text-decoration: none;
+          visibility: visible; }
       .nav .nav-user .control .login-button {
         font-weight: 600;
         border: 0;
