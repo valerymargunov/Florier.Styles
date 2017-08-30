@@ -3091,3 +3091,54 @@ table .action .active:hover {
 .single-order .order-confirm-desc .desc {
     margin: 15px 0px 20px 0px;
 }
+
+.envelope {
+    background: url(images/ico-envelope.png) 50% 50% no-repeat;
+}
+
+.envelope:hover {
+    background: url(images/ico-envelope-hover.png) 50% 50% no-repeat;
+}
+
+.envelope-right {
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    width: 30px;
+    height: 20px;
+}
+
+.envelope-right span {
+    background: #fff;
+    z-index: 10;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    position: absolute;
+    bottom: -28px;
+    left: -53px;
+    font-size: 13px;
+    color: #FF0066;
+    border: 1px solid #FF0066;
+    padding: 1px 4px;
+    border-radius: 5px;
+    font-weight: bold;
+    white-space: nowrap;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+.customer.envelope-right span {
+    left: -45px;
+}
+
+.envelope-right span:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 45%;
+    border: 6px solid #FF0066;
+    border-color: transparent transparent #FF0066 transparent;
+}
+
+.envelope-right:hover span {
+    opacity: 1;
+}
