@@ -1,0 +1,68 @@
+.message-block {
+  margin-top: 30px;
+  border-top: 1px solid #cccccc; }
+  .message-block .left-block {
+    width: 320px; }
+    .message-block .left-block .messages {
+      width: 320px;
+      height: 530px;
+      overflow-y: scroll;
+      position: relative; }
+      .message-block .left-block .messages ul {
+        list-style: none;
+        display: block;
+        padding: 0; }
+        .message-block .left-block .messages ul li {
+          display: block; }
+          .message-block .left-block .messages ul li:not(:last-child) {
+            border-bottom: 1px solid #cccccc; }
+          .message-block .left-block .messages ul li a {
+            display: block;
+            height: 68px;
+            -webkit-border-radius: 0;
+               -moz-border-radius: 0;
+                    border-radius: 0;
+            border: 1px solid #ffffff;
+            color: #4A5658;
+            text-decoration: none;
+            font-weight: 700;
+            -webkit-transition: all 0.5s ease 0.3s;
+            -o-transition: all 0.5s ease 0.3s;
+            -moz-transition: all 0.5s ease 0.3s;
+            transition: all 0.5s ease 0.3s; }
+            .message-block .left-block .messages ul li a:hover {
+              background: #cccccc;
+              -webkit-transition: all 0.5s ease 0.3s;
+              -o-transition: all 0.5s ease 0.3s;
+              -moz-transition: all 0.5s ease 0.3s;
+              transition: all 0.5s ease 0.3s; }
+            .message-block .left-block .messages ul li a .title {
+              margin-top: 5px; }
+            .message-block .left-block .messages ul li a .text {
+              line-height: 30px;
+              margin-left: 13px; }
+            .message-block .left-block .messages ul li a .file {
+              margin-left: 3px; }
+              .message-block .left-block .messages ul li a .file:after {
+                margin-left: 5px;
+                content: url("../images/file.png"); }
+    .message-block .left-block .semi-trans {
+      position: absolute;
+      bottom: 45px;
+      left: 0;
+      width: 320px;
+      height: 70px;
+      background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(rgba(255, 255, 255, 0.2)));
+      background: -webkit-linear-gradient(bottom, #ffffff 0%, rgba(255, 255, 255, 0.2) 100%);
+      background: -moz-linear-gradient(bottom, #ffffff 0%, rgba(255, 255, 255, 0.2) 100%);
+      background: -o-linear-gradient(bottom, #ffffff 0%, rgba(255, 255, 255, 0.2) 100%);
+      background: linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0.2) 100%); }
+    .message-block .left-block .more {
+      width: 100%; }
+      .message-block .left-block .more .show-more {
+        text-align: left; }
+        .message-block .left-block .more .show-more a {
+          margin-left: 20px; }
+      .message-block .left-block .more .pagination {
+        right: 20px;
+        padding: 2px 15px; }
